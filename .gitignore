@@ -37,4 +37,4 @@ ehthumbs.db
 Thumbs.db
 
 # Ignore stuff #
-env/development.js
+config/env/development.js
