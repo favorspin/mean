@@ -38,3 +38,4 @@ Thumbs.db
 
 # Ignore stuff #
 config/env/development.js
+node_modules/
