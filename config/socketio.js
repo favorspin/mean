@@ -17,13 +17,13 @@ module.exports = function(server, io, mongoStore) {
                         } else {
                             next(new Error('User is not authenticated'), false);
                         }
-                    })
+                    });
                 });
             });
         });
     });
 
     io.on('connection', function(socket) {
-
+        require('../app/controllers/chat.server.controller')(io, socket);
     });
 };
